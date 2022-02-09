@@ -1,0 +1,27 @@
+{{#each messages}}
+    <div class="card">
+        <h3 class="card-divider">
+            {{title}}
+        </h3>
+        <div class="callout">
+            <ul class="menu simple">
+                <li><a href="#">{{createdAt}}</a></li>
+            </ul>
+        </div>
+        <div class="card-section">
+            <p>{{content}}s</p>
+            <hr/>
+            <a class="button float-left" href="/msg/{{_id}}">Modifier</a>
+            <form method="POST" action="/msg/{{_id}}?_method=DELETE">
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="button float-right alert" type="submit">Supprimer</button>
+            </form>
+        </div>
+    </div>
+{{else}}
+    <div class="card">
+        <h3 class="card-divider">
+            Pas de messages en Base de données
+        </h3>
+    </div>
+{{/each}}

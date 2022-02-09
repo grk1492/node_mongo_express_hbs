@@ -1,0 +1,87 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Questrial|Roboto|Arvo|Crimson+Tex&display=swap');
+
+body {
+  background: rgb(158, 158, 205);
+  background: -moz-radial-gradient(circle, rgba(158, 158, 205, 1) 0%, rgba(91, 149, 161, 1) 85%, rgba(177, 174, 231, 0.5326505602240896) 100%);
+  background: -webkit-radial-gradient(circle, rgba(158, 158, 205, 1) 0%, rgba(91, 149, 161, 1) 85%, rgba(177, 174, 231, 0.5326505602240896) 100%);
+  background: radial-gradient(circle, rgba(158, 158, 205, 1) 0%, rgba(91, 149, 161, 1) 85%, rgba(177, 174, 231, 0.5326505602240896) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9e9ecd", endColorstr="#b1aee7", GradientType=1);
+}
+
+.logo {
+  padding-top: .2rem;
+  width: 50px;
+  margin: auto;
+}
+
+.button {
+  margin-bottom: 0;
+}
+
+.button.reset, .button.reset.disabled, .button.reset[disabled], .button.reset.disabled:hover, .button.reset[disabled]:hover, .button.reset.disabled:focus, .button.reset[disabled]:focus {
+  background-color: #5289c1;
+  color: #fefefe;
+}
+
+.button.reset:hover, .button.reset:focus {
+  background-color: #126195;
+  color: #9fa8da;
+}
+
+.card-section {
+  text-align: justify;
+  font-family: 'Questrial', sans-serif;
+  color: #26313c;
+}
+
+.card-divider {
+  color: #073a6e;
+  font-family: 'Alfa Slab One', cursive;
+  background: #e6e6e6;
+}
+
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.callout {
+  font-family: 'Arvo', sans-serif;
+
+  &.alert {
+    background-color: #ffcdd2;
+    color: #f50057;
+    margin-top: .6rem;
+    margin-bottom: 0;
+  }
+
+  &.success {
+    background-color: #b2dfdb;
+    color: #004d40;
+    margin-top: .6rem;
+    margin-bottom: 0;
+  }
+
+  &.app-form {
+    margin-top: .6rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    background-color: #ede7f6;
+  }
+}
+
+.form-error {
+  font-style: italic;
+  color: #d50000 ;
+  font-family: 'Crimson Text', serif;
+}
+
+.fieldset {
+  margin: .1rem 0;
+  padding: 1.25rem;
+  border: 1px solid #cacaca;
+}

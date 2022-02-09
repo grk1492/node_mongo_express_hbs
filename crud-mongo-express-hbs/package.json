@@ -1,0 +1,23 @@
+{
+  "name": "mongo-express-hbs",
+  "version": "1.0.0",
+  "description": "Decouverte de NodeJS avec Mongo et handlbars",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "Joachim Zadi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.9",
+    "nodemon": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}

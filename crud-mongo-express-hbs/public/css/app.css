@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Questrial|Roboto|Arvo&display=swap");
+body {
+  margin-top: .2rem;
+  background: #9e9ecd;
+  background: -moz-radial-gradient(circle, #9e9ecd 0%, #5b95a1 85%, rgba(177, 174, 231, 0.5326505602) 100%);
+  background: -webkit-radial-gradient(circle, #9e9ecd 0%, #5b95a1 85%, rgba(177, 174, 231, 0.5326505602) 100%);
+  background: radial-gradient(circle, #9e9ecd 0%, #5b95a1 85%, rgba(177, 174, 231, 0.5326505602) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9e9ecd",endColorstr="#b1aee7",GradientType=1);
+}
+
+.logo {
+  padding-top: 0.2rem;
+  width: 50px;
+  margin: auto;
+}
+
+.button {
+  margin-bottom: 0;
+}
+
+.button.reset, .button.reset.disabled, .button.reset[disabled], .button.reset.disabled:hover, .button.reset[disabled]:hover, .button.reset.disabled:focus, .button.reset[disabled]:focus {
+  background-color: #5289c1;
+  color: #fefefe;
+}
+
+.button.reset:hover, .button.reset:focus {
+  background-color: #126195;
+  color: #9fa8da;
+}
+
+.card-section {
+  text-align: justify;
+  font-family: "Questrial", sans-serif;
+  color: #26313c;
+}
+
+.card-divider {
+  margin-top: .2rem;
+  color: #073a6e;
+  font-family: "Alfa Slab One", cursive;
+  background: #e6e6e6;
+}
+
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.callout.alert {
+  font-family: "Arvo", sans-serif;
+  background-color: #f7e4e1;
+  color: #0a0a0a;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="/css/foundation.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+    <title>{{titre}}</title>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+            {{> _navbar}}
+            <div class="page">
+                {{> _msg}}
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Compressed JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Compressed what-input -->
+<script src="/js/vendor/what-input.js"></script>
+<!-- Compressed JavaScript -->
+<script src="/js/vendor/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

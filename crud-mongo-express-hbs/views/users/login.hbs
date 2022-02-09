@@ -1,0 +1,45 @@
+{{#if errors}}
+    <div class="callout alert">
+        {{#each errors}}
+            <ul>
+                <li>{{text}}</li>
+            </ul>
+        {{else}}
+
+        {{/each}}
+    </div>
+{{/if}}
+
+{{#if error}}
+    <div class="callout alert">{{error}}</div>
+{{/if}}
+
+<form method="POST" data-abide novalidate>
+    <div class="grid-x grid-margin-x">
+        <div class="cell">
+            <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> Il y a quelques erreurs dans votre formulaire.</p>
+            </div>
+        </div>
+    </div>
+    <fieldset class="fieldset">
+        <legend>Connectez vous svp</legend>
+         <p>
+            <label>Identiant
+                <input type="email" placeholder="Saisir identifiant au format @email" value="{{email}}" name="email"
+                       required/>
+                <span class="form-error">Le champ identifiant est obligatoire</span>
+            </label>
+        </p>
+        <p>
+            <label>Mot de passe
+                <input type="password" placeholder="Saisir votre mot de passe" name="mdp" value="{{mdp}}" required/>
+                <span class="form-error">Le champ mot de passe est obligatoire</span>
+            </label>
+        </p>
+        <p class="align-middle">
+            <button type="submit" class="button float-left">Valider</button>
+            <button type="reset" class="button float-right reset">Reset</button>
+        </p>
+    </fieldset>
+</form>
